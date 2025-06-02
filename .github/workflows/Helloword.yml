@@ -13,3 +13,6 @@ jobs:
         steps:
             - name : "Print Hellow word"
               run: echo "Hellow world"
+
+            -name: "Print today's date"
+            run: date
