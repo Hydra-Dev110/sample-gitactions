@@ -1,0 +1,13 @@
+name : "Multi Event Pipeline Workflow" #name of the pipeline
+
+on : 
+    push:                       #event -Whenever something is pushed in main branch job will get triggered
+        branches:
+            - main
+
+jobs: 
+    on-push:                    #job name
+        runs-on: ubantu latest
+        steps:                  #step no1
+        - name : "Running on main push"
+          run: echo "Running main push"
