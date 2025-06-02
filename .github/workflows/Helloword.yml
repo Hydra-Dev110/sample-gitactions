@@ -1,0 +1,15 @@
+name : "Hellow world workflow"
+# Triggers the workflow on push on to master or production branch
+on :
+    push:
+        branches:
+            - main
+            - production
+
+
+jobs: 
+    hellow_world:
+        runs-on: ubuntu-latest
+        steps:
+            - name : "Print Hellow word"
+              run: echo "Hellow world"
